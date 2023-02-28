@@ -6,6 +6,24 @@ body{
     padding: 20px;
 }
 
+h1{
+    font-size: 8;
+    color: #898787;
+}
+
+h2{
+    font-size: 8;
+    color: #898787;
+}
+
+h3{
+    font-size: 7;
+    color: #898787;
+
+}
+
+
+
 div {
     column-count: 1;
   }
@@ -16,7 +34,7 @@ html{
 
 img {
 border-radius: 8px;
-border: 1px #ffffff;
+border: 1px #a19f9f;
 padding: 20px;
 padding-bottom: 40px;
 width: 400px;
@@ -33,6 +51,23 @@ div {
     column-gap: 40px;
     column-width: 600px;
   }
+
+  h1{
+    font-size: 8;
+    color: #898787;
+}
+
+h2{
+    font-size: 8;
+    color: #898787;
+}
+
+h3{
+    font-size: 7;
+    color: #898787;
+
+}
+
 
 
 img {
