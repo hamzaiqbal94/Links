@@ -1,9 +1,28 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:wght@100;300;400&display=swap');
+
+body{
+    font-family: font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    color: #ffffff ;
+}
+
+h1{
+    display: none;
+}
+
+header{
+    font-family: font-family: 'Lato', sans-serif;
+    font-size: 250;
+    color: #CD212A;
+
+}
+
 /* These styles are just to make it easier to see the blocks, initially. */
 :root{
-    --margin: 10px;
+    --margin: 0px;
 }
-body { padding: 2em; }
+body { padding: 10px; }
 
 
 
@@ -12,6 +31,7 @@ ul {
 
 	display: grid;
 	grid-template-columns: repeat(var(--columns), 1fr);
+    padding: -20px;
 }
 
 
@@ -20,20 +40,27 @@ ul {
 }
 
 .background{
-    background-color: rgb(221, 221, 221);
+    background-color: rgb(241, 241, 241);
     padding: var(--margin);
     border-radius: 8px;
 }
 
 .image-block img {
     filter: grayscale(100%);
+    filter: saturate(40%);
+    object-fit: cover;
+    object-position: top right;
   
     border-radius: 8px;
 }
 
 .image-block img:hover{
     transform: scaleX(-1);
+    transform: perspective(20);
 }
+
+::marker{
+    opacity: 0;
 }
 
 //
@@ -46,6 +73,6 @@ section,
 ul,
 figure {
 	display: grid;
-	gap: 1em;
+	gap: 2em;
 }
 
