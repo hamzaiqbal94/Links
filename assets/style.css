@@ -1,0 +1,51 @@
+
+/* These styles are just to make it easier to see the blocks, initially. */
+:root{
+    --margin: 10px;
+}
+body { padding: 2em; }
+
+
+
+ul {
+	--columns: 1;
+
+	display: grid;
+	grid-template-columns: repeat(var(--columns), 1fr);
+}
+
+
+@media (min-width: 600px) {
+	ul { --columns: 3; }
+}
+
+.background{
+    background-color: rgb(221, 221, 221);
+    padding: var(--margin);
+    border-radius: 8px;
+}
+
+.image-block img {
+    filter: grayscale(100%);
+  
+    border-radius: 8px;
+}
+
+.image-block img:hover{
+    transform: scaleX(-1);
+}
+}
+
+//
+a { color: blue; }
+em { font-style: italic; }
+strong { font-weight: bold; }
+
+body,
+section,
+ul,
+figure {
+	display: grid;
+	gap: 1em;
+}
+
