@@ -6,6 +6,9 @@ body{
     padding: 20px;
 }
 
+div {
+    column-count: 1;
+  }
 
 html{
     scroll-behavior: smooth;
@@ -24,6 +27,13 @@ width: 400px;
 .content{
     display: colum;
 }
+
+div {
+    column-count: 3;
+    column-gap: 40px;
+    column-width: 600px;
+  }
+
 
 img {
     border-radius: 8px;
